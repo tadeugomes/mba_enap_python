@@ -1,0 +1,3 @@
+(?s)\"### BEGIN SOLUTION\\n\",.*?\"### END SOLUTION\"
+
+(?s)\"# Faça aqui\\n",.*?\"### END SOLUTION"
