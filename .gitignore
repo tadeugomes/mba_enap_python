@@ -1,9 +1,5 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-
 # Environment variables
-**/.env
+.env
 
 # Python
 __pycache__/
