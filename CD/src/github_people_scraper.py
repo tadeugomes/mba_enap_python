@@ -179,25 +179,6 @@ if __name__ == "__main__":
     # import argparse
     import json
 
-    # parser = argparse.ArgumentParser(description="Scrape GitHub organisation members")
-    # parser.add_argument(
-    #     "org_url",
-    #     help="The URL of the organisation's people page (e.g. https://github.com/orgs/python/people)",
-    # )
-    # parser.add_argument(
-    #     "-n",
-    #     "--num_pages",
-    #     type=int,
-    #     default=1,
-    #     help="Number of pages to scrape (default: 1)",
-    # )
-    # parser.add_argument(
-    #     "-o",
-    #     "--output",
-    #     default=None,
-    #     help="Optional file path to write the scraped data as JSON. If omitted, data is printed to stdout.",
-    # )
-    # args = parser.parse_args()
     org_url = "https://github.com/orgs/python/people"
     output = "output.json"
 
