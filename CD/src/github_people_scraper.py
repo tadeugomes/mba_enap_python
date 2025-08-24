@@ -1,36 +1,3 @@
-"""
-Web scraper for GitHub organization members
-------------------------------------------
-
-This script uses Selenium to navigate the "people" tab of a GitHub organization
-and extract three pieces of information for each member listed on the page:
-
-1. ``profile_url`` – the full URL to the member's GitHub profile (e.g. ``https://github.com/username``)
-2. ``username`` – the short login handle for the user (e.g. ``username``)
-3. ``photo_url`` – the URL of the user's avatar image
-
-The scraper is robust to pagination: you can specify how many pages of results
-to collect via the ``num_pages`` parameter.  GitHub organisations often break
-their member lists into multiple pages, and this script will iterate through
-each page in turn until it has collected the desired number of pages or
-encounters a page that contains no member rows.
-
-Usage example::
-
-    from github_people_scraper import scrape_org_members
-    results = scrape_org_members("https://github.com/orgs/python/people", num_pages=3)
-    for item in results:
-        print(item)
-
-The ``results`` variable will be a list of dictionaries, one per member,
-containing the keys ``profile_url``, ``username``, and ``photo_url``.
-
-Note: This script requires the ``selenium`` package and a compatible
-``chromedriver`` available on your system.  You may need to adjust the
-``webdriver.ChromeOptions()`` settings (for example, to run in non-headless
-mode) depending on your environment.
-"""
-
 from __future__ import annotations
 
 import time
