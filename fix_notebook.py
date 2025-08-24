@@ -22,3 +22,5 @@ except json.JSONDecodeError:
     print('Erro: Falha ao decodificar o JSON do notebook. O arquivo pode estar corrompido.')
 except Exception as e:
     print(f'Ocorreu um erro inesperado: {e}')
+
+
